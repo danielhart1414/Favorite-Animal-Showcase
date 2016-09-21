@@ -100,7 +100,20 @@ footer {
 
 
 /*******************************
-PAGE PORTFOLIO
+PAGE HOME
+*******************************/
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+
+
+/*******************************
+PAGE GALLERY
 *******************************/
 
 #gallery {
@@ -127,19 +140,6 @@ PAGE PORTFOLIO
 
 
 /*******************************
-PAGE ABOUT
-*******************************/
-
-.profile-photo {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-  border-radius: 100%;
-}
-
-
-
-/*******************************
 PAGE CONTACT
 *******************************/
 
@@ -159,8 +159,8 @@ PAGE CONTACT
   margin: 0 0 10px;
 }
 
-.contact-info li.phone a {
-  background-image: url('../img/phone.png');
+.contact-info li {
+  list-style: none;
 }
 
 .contact-info li.mail a {
