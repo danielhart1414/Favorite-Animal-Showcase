@@ -22,7 +22,16 @@
   
   
   /*******************************
-  PAGE: PORTFOLIO
+  PAGE: HOME
+  *******************************/
+  
+  .profile-photo {
+    float: left;
+    margin: 0 5% 80px 0;
+  }  
+  
+  /*******************************
+  PAGE: GALLERY
   *******************************/
   
 /*  Each column has 2.5% padding on each side, leaving 85% for the actual columns*/
@@ -33,16 +42,7 @@
   #gallery li:nth-child(3n+1) {
     clear: left;
   }
-  
-  
-  /*******************************
-  PAGE: ABOUT
-  *******************************/
-  
-  .profile-photo {
-    float: left;
-    margin: 0 5% 80px 0;
-  }
+
 
 }
 
