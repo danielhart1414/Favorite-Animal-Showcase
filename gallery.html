@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One%7COpen+Sans">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/modal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -27,47 +28,147 @@
       </header>
       <div id="wrapper">
         <ul id="gallery">
-          <li>
+          <li onclick="openModal()">
             <img src="img/TigerInGrass.jpg" alt="Tiger Lying in Grass" title="&quot;That was a nice nap.&quot;">
             <p>A tiger lying in the grass</p>
           </li>
-          <li>
+          <li onclick="openModal()">
             <img src="img/RoaringTiger.jpg" alt="Roaring Tiger" title="&quot;ROOOOAAAARRRR!!!&quot;">
             <p>The mighty tiger ROARS!</p>
           </li>
-          <li>
+          <li onclick="openModal()">
             <img src="img/Raven.jpg" alt="Raven" title="&quot;Watch my crow cousin go bait fishing on Youtube.&quot;">
             <p>The Raven - the bird with the most street smarts</p>
           </li>
-          <li>
+          <li onclick="openModal()">
             <img src="img/Lion.jpg" alt="Lion" title="&quot;That hairball is my son and your future king.&quot;">
             <p>The noblest of cats</p>
           </li>
-          <li>
-            <img src="img/SnowLions.jpg" alt="Lions in Snow" title="&quot;There was ice in that snowball!&quot;">
+          <li onclick="openModal()">
+            <img src="img/SnowLions.jpg" alt="Lions in the Snow" title="&quot;There was ice in that snowball!&quot;">
             <p>Lions in the snow</p>
           </li>
-          <li>
-            <img src="img/HarrisHawk.jpg" alt="Harris Hawk" title="&quot;Time to hunt!&quot;">
+          <li onclick="openModal()">
+            <img src="img/HarrisHawk.jpg" alt="Harris's Hawk" title="&quot;Time to hunt!&quot;">
             <p>The Harris's hawk</p>
           </li>
-          <li>
+          <li onclick="openModal()">
             <img src="img/BarnOwl.jpg" alt="Barn Owl" title="&quot;Excuse me&mdash;coming through!&quot;">
             <p>Incoming!</p>
           </li>
-          <li>
+          <li onclick="openModal()">
             <img src="img/Mantis.jpg" alt="Praying Mantis" title="&quot;Who are you looking at?&quot;">
             <p>"Who are you looking at?" says the mantis.</p>
           </li>
-          <li>
+          <li onclick="openModal()">
             <img src="img/Butterfly.jpg" alt="Butterfly" title="Butterflies don't say much...">
             <p>What brilliant colors!</p>
           </li>
         </ul>
       </div>
+
+      <!-- The Modal (Lightbox) -->
+      <div id="animalModal" class="modal">
+        <span class="close" onclick="">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 9</div>
+            <img src="img/TigerInGrass.jpg" alt="Tiger Lying in Grass">
+          </div>
+
+          <div class="">
+            <div class="numbertext">2 / 9</div>
+            <img src="img/RoaringTiger.jpg" alt="Roaring Tiger">
+          </div>
+
+          <div class="">
+            <div class="numbertext">3 / 9</div>
+            <img src="img/Raven.jpg" alt="Raven">
+          </div>
+
+          <div class="">
+            <div class="numbertext">4 / 9</div>
+            <img src="img/Lion.jpg" alt="Lion">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 9</div>
+            <img src="img/SnowLions.jpg" alt="Lions in the Snow">
+          </div>
+
+          <div class="">
+            <div class="numbertext">6 / 9</div>
+            <img src="img/HarrisHawk.jpg" alt="Harris's Hawk">
+          </div>
+
+          <div class="">
+            <div class="numbertext">7 / 9</div>
+            <img src="img/BarnOwl.jpg" alt="Barn Owl">
+          </div>
+
+          <div class="">
+            <div class="numbertext">8 / 9</div>
+            <img src="img/Mantis.jpg" alt="Praying Mantis">
+          </div>
+
+          <div class="">
+            <div class="numbertext">9 / 9</div>
+            <img src="img/Butterfly.jpg" alt="Butterfly">
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="">
+            <img class="" src="img/TigerInGrass.jpg" onclick="currentSlide(1)" alt="Tiger Lying in Grass">
+          </div>
+
+          <div class="">
+            <img class="" src="img/RoaringTiger.jpg" onclick="currentSlide(2)" alt="Roaring Tiger">
+          </div>
+
+          <div class="">
+            <img class="" src="img/Raven.jpg" onclick="currentSlide(3)" alt="Raven">
+          </div>
+
+          <div class="">
+            <img class="" src="img/Lion.jpg" onclick="currentSlide(4)" alt="Lion">
+          </div>
+
+          <div class="">
+            <img class="" src="img/SnowLions.jpg" onclick="currentSlide(5)" alt="Lions in the Snow">
+          </div>
+
+          <div class="">
+            <img class="" src="img/HarrisHawk.jpg" onclick="currentSlide(6)" alt="Harris's Hawk">
+          </div>
+
+          <div class="">
+            <img class="" src="img/BarnOwl.jpg" onclick="currentSlide(7)" alt="Barn Owl">
+          </div>
+
+          <div class="">
+            <img class="" src="img/Mantis.jpg" onclick="currentSlide(8)" alt="Praying Mantis">
+          </div>
+
+          <div class="">
+            <img class="" src="img/Butterfly.jpg" onclick="currentSlide(9)" alt="Butterfly">
+          </div>
+        </div>
+      </div>
     </div>
+
     <footer>
         <p>&copy; 2019 Daniel Hart.</p>
     </footer>
+
+    <script type="text/javascript" src="js/modal.js"></script>
   </body>
 </html>
