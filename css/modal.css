@@ -60,7 +60,7 @@ MODAL STYLING
 }
 
 /* Hide the slides by default */
-.mySlides {
+.animalSlide {
   display: none;
 }
 /*Where I stopped*/
@@ -94,7 +94,7 @@ MODAL STYLING
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
+/* Number text (1/9 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -110,20 +110,24 @@ MODAL STYLING
   padding: 2px 16px;
   color: white;
 }
-
-img.demo {
+/*I checked below here*/
+.imgThumb {
   opacity: 0.6;
 }
 
 .active,
-.demo:hover {
+.imgThumb:hover {
   opacity: 1;
 }
 
-img.hover-shadow {
+li.hover-shadow {
   transition: 0.3s;
 }
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#gallery li {
+  cursor:pointer;
 }

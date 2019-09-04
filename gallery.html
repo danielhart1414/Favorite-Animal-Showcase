@@ -28,39 +28,39 @@
       </header>
       <div id="wrapper">
         <ul id="gallery">
-          <li onclick="openModal()">
+          <li class="hover-shadow" onclick="openAnimalModal();currentSlide(1)">
             <img src="img/TigerInGrass.jpg" alt="Tiger Lying in Grass" title="&quot;That was a nice nap.&quot;">
             <p>A tiger lying in the grass</p>
           </li>
-          <li onclick="openModal()">
+          <li class="hover-shadow" onclick="openAnimalModal();currentSlide(2)">
             <img src="img/RoaringTiger.jpg" alt="Roaring Tiger" title="&quot;ROOOOAAAARRRR!!!&quot;">
             <p>The mighty tiger ROARS!</p>
           </li>
-          <li onclick="openModal()">
+          <li class="hover-shadow" onclick="openAnimalModal();currentSlide(3)">
             <img src="img/Raven.jpg" alt="Raven" title="&quot;Watch my crow cousin go bait fishing on Youtube.&quot;">
             <p>The Raven - the bird with the most street smarts</p>
           </li>
-          <li onclick="openModal()">
+          <li class="hover-shadow" onclick="openAnimalModal();currentSlide(4)">
             <img src="img/Lion.jpg" alt="Lion" title="&quot;That hairball is my son and your future king.&quot;">
             <p>The noblest of cats</p>
           </li>
-          <li onclick="openModal()">
+          <li class="hover-shadow" onclick="openAnimalModal();currentSlide(5)">
             <img src="img/SnowLions.jpg" alt="Lions in the Snow" title="&quot;There was ice in that snowball!&quot;">
             <p>Lions in the snow</p>
           </li>
-          <li onclick="openModal()">
+          <li class="hover-shadow" onclick="openAnimalModal();currentSlide(6)">
             <img src="img/HarrisHawk.jpg" alt="Harris's Hawk" title="&quot;Time to hunt!&quot;">
             <p>The Harris's hawk</p>
           </li>
-          <li onclick="openModal()">
+          <li class="hover-shadow" onclick="openAnimalModal();currentSlide(7)">
             <img src="img/BarnOwl.jpg" alt="Barn Owl" title="&quot;Excuse me&mdash;coming through!&quot;">
             <p>Incoming!</p>
           </li>
-          <li onclick="openModal()">
+          <li class="hover-shadow" onclick="openAnimalModal();currentSlide(8)">
             <img src="img/Mantis.jpg" alt="Praying Mantis" title="&quot;Who are you looking at?&quot;">
             <p>"Who are you looking at?" says the mantis.</p>
           </li>
-          <li onclick="openModal()">
+          <li class="hover-shadow" onclick="openAnimalModal();currentSlide(9)">
             <img src="img/Butterfly.jpg" alt="Butterfly" title="Butterflies don't say much...">
             <p>What brilliant colors!</p>
           </li>
@@ -69,49 +69,49 @@
 
       <!-- The Modal (Lightbox) -->
       <div id="animalModal" class="modal">
-        <span class="close" onclick="">&times;</span>
+        <span class="close" onclick="closeAnimalModal()">&times;</span>
         <div class="modal-content">
-          <div class="mySlides">
+          <div class="animalSlide">
             <div class="numbertext">1 / 9</div>
             <img src="img/TigerInGrass.jpg" alt="Tiger Lying in Grass">
           </div>
 
-          <div class="">
+          <div class="animalSlide">
             <div class="numbertext">2 / 9</div>
             <img src="img/RoaringTiger.jpg" alt="Roaring Tiger">
           </div>
 
-          <div class="">
+          <div class="animalSlide">
             <div class="numbertext">3 / 9</div>
             <img src="img/Raven.jpg" alt="Raven">
           </div>
 
-          <div class="">
+          <div class="animalSlide">
             <div class="numbertext">4 / 9</div>
             <img src="img/Lion.jpg" alt="Lion">
           </div>
 
-          <div class="mySlides">
+          <div class="animalSlide">
             <div class="numbertext">5 / 9</div>
             <img src="img/SnowLions.jpg" alt="Lions in the Snow">
           </div>
 
-          <div class="">
+          <div class="animalSlide">
             <div class="numbertext">6 / 9</div>
             <img src="img/HarrisHawk.jpg" alt="Harris's Hawk">
           </div>
 
-          <div class="">
+          <div class="animalSlide">
             <div class="numbertext">7 / 9</div>
             <img src="img/BarnOwl.jpg" alt="Barn Owl">
           </div>
 
-          <div class="">
+          <div class="animalSlide">
             <div class="numbertext">8 / 9</div>
             <img src="img/Mantis.jpg" alt="Praying Mantis">
           </div>
 
-          <div class="">
+          <div class="animalSlide">
             <div class="numbertext">9 / 9</div>
             <img src="img/Butterfly.jpg" alt="Butterfly">
           </div>
@@ -127,39 +127,39 @@
 
           <!-- Thumbnail image controls -->
           <div class="">
-            <img class="" src="img/TigerInGrass.jpg" onclick="currentSlide(1)" alt="Tiger Lying in Grass">
+            <img class="imgThumb" src="img/TigerInGrass.jpg" onclick="currentSlide(1)" alt="Tiger Lying in Grass">
           </div>
 
           <div class="">
-            <img class="" src="img/RoaringTiger.jpg" onclick="currentSlide(2)" alt="Roaring Tiger">
+            <img class="imgThumb" src="img/RoaringTiger.jpg" onclick="currentSlide(2)" alt="Roaring Tiger">
           </div>
 
           <div class="">
-            <img class="" src="img/Raven.jpg" onclick="currentSlide(3)" alt="Raven">
+            <img class="imgThumb" src="img/Raven.jpg" onclick="currentSlide(3)" alt="Raven">
           </div>
 
           <div class="">
-            <img class="" src="img/Lion.jpg" onclick="currentSlide(4)" alt="Lion">
+            <img class="imgThumb" src="img/Lion.jpg" onclick="currentSlide(4)" alt="Lion">
           </div>
 
           <div class="">
-            <img class="" src="img/SnowLions.jpg" onclick="currentSlide(5)" alt="Lions in the Snow">
+            <img class="imgThumb" src="img/SnowLions.jpg" onclick="currentSlide(5)" alt="Lions in the Snow">
           </div>
 
           <div class="">
-            <img class="" src="img/HarrisHawk.jpg" onclick="currentSlide(6)" alt="Harris's Hawk">
+            <img class="imgThumb" src="img/HarrisHawk.jpg" onclick="currentSlide(6)" alt="Harris's Hawk">
           </div>
 
           <div class="">
-            <img class="" src="img/BarnOwl.jpg" onclick="currentSlide(7)" alt="Barn Owl">
+            <img class="imgThumb" src="img/BarnOwl.jpg" onclick="currentSlide(7)" alt="Barn Owl">
           </div>
 
           <div class="">
-            <img class="" src="img/Mantis.jpg" onclick="currentSlide(8)" alt="Praying Mantis">
+            <img class="imgThumb" src="img/Mantis.jpg" onclick="currentSlide(8)" alt="Praying Mantis">
           </div>
 
           <div class="">
-            <img class="" src="img/Butterfly.jpg" onclick="currentSlide(9)" alt="Butterfly">
+            <img class="imgThumb" src="img/Butterfly.jpg" onclick="currentSlide(9)" alt="Butterfly">
           </div>
         </div>
       </div>
