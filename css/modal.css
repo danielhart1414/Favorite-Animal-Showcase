@@ -13,10 +13,10 @@ MODAL STYLING
 } */
 
 /* Create four equal columns that floats next to eachother */
-.column {
+/* .column {
   float: left;
   width: 25%;
-}
+} */
 
 /* The Modal (background) */
 .modal {
@@ -111,6 +111,10 @@ MODAL STYLING
   color: white;
 }
 /*I checked below here*/
+.thumb-container {
+  display:flex;
+}
+
 .imgThumb {
   opacity: 0.6;
 }

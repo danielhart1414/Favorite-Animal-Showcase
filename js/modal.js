@@ -10,6 +10,11 @@ function closeAnimalModal() {
   document.getElementById("animalModal").style.display = "none";
 }
 
+document.onkeydown = function(evt) {
+  evt = evt || window.event;
+  if (evt.keyCode == 27) {closeAnimalModal();}
+};
+
 var slideIndex = 1;
 
 //Sets modal initially and provides thumbnail control
