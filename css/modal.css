@@ -111,19 +111,6 @@ MODAL STYLING
   color: white;
 }
 /*I checked below here*/
-.thumb-container {
-  display:flex;
-}
-
-.imgThumb {
-  opacity: 0.6;
-}
-
-.active,
-.imgThumb:hover {
-  opacity: 1;
-}
-
 li.hover-shadow {
   transition: 0.3s;
 }
