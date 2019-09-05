@@ -10,12 +10,18 @@ function closeAnimalModal() {
   document.getElementById("animalModal").style.display = "none";
 }
 
+var slideIndex = 1;
+
 document.onkeydown = function(evt) {
   evt = evt || window.event;
   if (evt.keyCode == 27) {closeAnimalModal();}
+  if (evt.keyCode == 37 && document.getElementById("animalModal").style.display == "block") {
+    advanceSlides(-1);
+  }
+  if (evt.keyCode == 39 && document.getElementById("animalModal").style.display == "block") {
+    advanceSlides(1);
+  }
 };
-
-var slideIndex = 1;
 
 //Sets modal initially
 function currentSlide(n) {
